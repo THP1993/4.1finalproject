@@ -403,7 +403,7 @@ h2 {
 
 /* responsive */
 
-@media (max-width: 790px) {
+@media (max-width: 760px) {
    .nav__links {
     display: none;
   }
