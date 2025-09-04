@@ -46,20 +46,20 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 33, 0, 0.537);
+  background-color: rgba(66, 121, 66, 0.562);
   z-index: 1;
+  pointer-events: none;
 }
 
 .navbar {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
   position: relative;
   height: 326px;
-  display: flex;
-  align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 40px 15px;
 }
-
-
 
 
 
@@ -86,7 +86,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   flex: 1;
-  margin-right: 48px;
+  margin-right: 32px;
 }
 
 .btn-contact {
@@ -98,7 +98,7 @@ body {
 background-color: green;
   border: 2px solid rgb(0, 128, 0, 1); 
   padding: 6px 14px;
-  border-radius: 6px; 
+  border-radius:100px; 
 }
 
 .link:hover {
@@ -112,6 +112,11 @@ background-color: green;
   color: rgb(0, 128, 0, 1);
   background-color: rgb(255, 255, 255);
   border-radius: ;
+  border-color: green;
+}
+
+.input-bar:hover {
+  border-color: green
 }
 
 .search__btn:hover svg path {
@@ -168,3 +173,42 @@ background-color: green;
   width: 100%;
 }
 
+.input-icon-container {
+  position: relative;
+  z-index: 3; 
+}
+
+.search__btn {
+  background-color: green;
+}
+
+.input-bar,
+.search__btn {
+  padding: 14px 20px 14px 48px; 
+  font-size: 18px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 999px;
+  width: 100%;
+  text-align: left;
+  transition: 1s ease ease-in;
+ 
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: rgb(255, 255, 255);
+  pointer-events: auto;
+  cursor: pointer;
+   transition: 1s ease ease-in;
+ 
+}
+
+.input-wrapper { 
+  position: relative;
+  z-index: 2;
+}

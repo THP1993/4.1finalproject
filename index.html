@@ -14,8 +14,9 @@
   <body>
     <div id="app">
       <div class="flex flex-col">
-        <header class="navbar">
+            <nav class="navbar">
           <div class="nav content-wrapper">
+            
             <div class="logo">
               <img
                 src="logo-simple-framed-green-gradient.svg"
@@ -23,14 +24,17 @@
               />
               <span class="logo__text">Spoonacular</span>
             </div>
-
             <div class="links">
-              <a href="#" class="link">About</a>
-              <a href="#" class="link">Recipies</a>
-              <a href="#" class="btn-contact">Contact Us</a>
+              <ul class="nav__links">
+    <li><a href="#" class="link">About</a></li>
+     <li><a href="recipepage.html" target="_blank" class="link">Recipies</a></li>
+       <li><a href="#" class="btn-contact">Contact Us</a></li>
+              </ul>
+            </div>
+        <header>
             </div>
           </div>
-        </header>
+        
         <section id="landing__page">
           <div id="bg-icons" aria-hidden="true"></div>
           <div class="landing__page--content-wrapper">
@@ -77,6 +81,7 @@
           <div class="image-wrapper">
             <img class="landing-img" src="undraw_eating-together_4cna.svg" />
           </div>
+          </header>
         </section>
       </div>
     </div>

@@ -1,8 +1,6 @@
 
 
 
-
-
 /* background pics */
 
 const ICON_SOURCES = [
