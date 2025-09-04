@@ -96,7 +96,7 @@ body {
   transition: 0.3s;
   font-family:'Alatsi', serif;
 background-color: green;
-  border: 2px solid rgb(0, 99, 0); 
+  border: 2px solid rgb(0, 128, 0, 1); 
   padding: 6px 14px;
   border-radius: 6px; 
 }
@@ -109,13 +109,13 @@ background-color: green;
 
 .btn-contact:hover,
 .search__btn:hover {
-  color: green;
+  color: rgb(0, 128, 0, 1);
   background-color: rgb(255, 255, 255);
   border-radius: ;
 }
 
 .search__btn:hover svg path {
-  fill: green;
+  fill: rgb(0, 128, 0, 1);
 }
 
 .logo {
@@ -130,6 +130,7 @@ background-color: green;
   height: 80px;
   width: auto;
   margin-left: 36px;
+ 
 }
 
 .logo__text {
@@ -137,6 +138,8 @@ background-color: green;
   color: rgb(255, 255, 255);
   font-family: "Alatsi", serif;
   font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
+
 }
 
 .link {
@@ -146,6 +149,7 @@ background-color: green;
   text-decoration: none;
   transition: 0.3s;
   font-family: "Alatsi", serif;
+  text-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .link::after,
