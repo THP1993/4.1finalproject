@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alatsi", serif;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.green {
+  color: rgb(0, 124, 0);
+}
+
+
+
+
+
+
+
+/* nav */
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 80%;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 33, 0, 0.537);
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  height: 326px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; 
+  padding: 40px 15px;
+}
+
+
+
+
+
+.navbar .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.nav.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 48px;
+}
+
+.btn-contact {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family:'Alatsi', serif;
+background-color: green;
+  border: 2px solid rgb(0, 99, 0); 
+  padding: 6px 14px;
+  border-radius: 6px; 
+}
+
+.link:hover {
+      color: rgb(255, 255, 255);
+  
+}
+
+
+.btn-contact:hover,
+.search__btn:hover {
+  color: green;
+  background-color: rgb(255, 255, 255);
+  border-radius: ;
+}
+
+.search__btn:hover svg path {
+  fill: green;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+ 
+}
+
+.logo__img {
+  height: 80px;
+  width: auto;
+  margin-left: 36px;
+}
+
+.logo__text {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  font-family: "Alatsi", serif;
+  font-weight: bold;
+}
+
+.link {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Alatsi", serif;
+}
+
+.link::after,
+.search__btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
