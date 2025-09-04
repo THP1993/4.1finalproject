@@ -16,6 +16,22 @@ body {
   overflow-x: hidden;
 }
 
+ li{
+   list-style: none;
+}
+
+
+a{
+   background: none;
+  text-decoration: none;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+
 .green {
   color: rgb(0, 128, 0, 1);
 }
@@ -28,13 +44,12 @@ body {
 
 .nav.content-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* <— prevents the burger icon from dropping below */
+  position: relative;
   width: 100%;
   max-width: 1200px;
-  background-color: transparent;
 }
 
 .nav__links {
@@ -75,7 +90,7 @@ body {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  margin-left: 75px;
+  margin-left: auto;
 }
 
 .logo__img {
@@ -87,6 +102,10 @@ body {
   font-size: 28px;
   color: green;
   font-family: "Alatsi", serif;
+}
+
+.links {
+  margin-left: auto;
 }
 
 .link {
@@ -272,6 +291,72 @@ h2 {
 
 /* menu */
 
+.btn__menu {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  text-align: center;
+  color: green;
+   padding-right: 20px;
+   margin-left: auto;
+  
+}
+
+.menu__backdrop {
+  position: fixed; /* use fixed to cover entire screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+  z-index: 100;
+  display: none; /* ✅ keep just this one, and remove the first 'flex' */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menu--open .menu__backdrop{
+  display: flex;
+}
+
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+}
+
+.fa-times{
+  background: none;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;     
+  height: 100vh;               
+  width: 100%;                 
+  gap: 24px;                   
+  background: none;
+}
+
+.menu__list {
+  padding: 32px 0;
+  background: none;
+  
+}
+
+
+.menu__link {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+
 /*backgroundimg stuff*/
 
 .search__btn svg {
@@ -303,7 +388,13 @@ h2 {
 /* responsive */
 
 @media (max-width: 760px) {
-  .links {
+  .nav__links {
     display: none;
   }
+
+  .btn__menu {
+    display: block;             
+  }
 }
+
+ 
