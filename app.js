@@ -12,13 +12,13 @@ function closeMenu() {
 /* background pics */
 
 const ICON_SOURCES = [
-  "bowl-food-solid-full.svg",
-  "lemon-solid-full.svg",
-  "carrot-solid-full.svg",
-  "egg-solid-full.svg",
-  "burger-solid-full.svg",
-  "utensils-solid-full.svg"
-];
+  "film-solid-full.svg" ,
+    "ticket-simple-solid-full.svg",
+  'video-solid-full.svg',
+  "film-solid-full.svg" ,
+    "ticket-simple-solid-full.svg",
+  'video-solid-full.svg',
+]
 
 function rand(min, max) {
   return Math.random() * (max - min) + min;
